@@ -74,7 +74,7 @@ void Task1()
             inner join s on s.n_post=spj.n_post
             inner join p on p.n_det=spj.n_det
             where s.name=(select min(name) from s) and p.ves>12
-            );
+            )
    if (sqlca.sqlcode < 0) //проверка кода возврата запроса
    {
       printf("Task1 error! code %d: %s\n", sqlca.sqlcode, sqlca.sqlerrm.sqlerrmc);
