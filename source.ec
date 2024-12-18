@@ -24,7 +24,7 @@ void ConnectDB()
          return;
       }
       printf("Success! code %d\n", sqlca.sqlcode);
-      printf("Connecting to schema \"pmib1613\"...\n");
+      printf("Connecting to schema \"pmib1408\"...\n");
       exec sql set search_path to pmib1613;
       if (sqlca.sqlcode < 0)
       {
